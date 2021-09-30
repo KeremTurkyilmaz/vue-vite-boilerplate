@@ -1,6 +1,15 @@
 module.exports = {
-  extends: ['plugin:vue/vue3-essential', 'prettier'],
-  rules: {
-    'vue/no-unused-vars': 'error',
-  },
+   extends: ['eslint:recommended', 'plugin:vue/vue3-recommended'],
+   rules: {
+      indent: ['error', 3],
+      'vue/html-indent': ['error', 3, { attribute: 3, closeBracket: 3 }],
+      'vue/html-self-closing': [
+         'error',
+         {
+            html: {
+               void: 'always'
+            }
+         }
+      ]
+   }
 };

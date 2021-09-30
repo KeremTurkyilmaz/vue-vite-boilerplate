@@ -2,13 +2,13 @@ import { createStore } from 'vuex';
 
 // Create a new store instance.
 const store = createStore({
-  state() {
-    return {};
-  },
-  modules: {},
-  getters: {},
-  mutations: {},
-  actions: {}
+   state() {
+      return {};
+   },
+   modules: {},
+   getters: {},
+   mutations: {},
+   actions: {}
 });
 
 export default store;
